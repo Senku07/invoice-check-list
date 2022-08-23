@@ -110,3 +110,20 @@ input{
     padding: 0.75rem 1.2rem;
     color: white;
 }
+
+#btn{
+    margin: auto;
+    font-size: 1.5rem;
+    background-color: rgb(17, 70, 192);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.35em;
+}
+
+#btn > a {
+
+    color: rgb(255, 255, 255);
+   
+    text-decoration: none;
+
+}
