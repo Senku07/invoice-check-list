@@ -1,66 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>CheckList</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Choose Check List</h1>
 
-</head>
-<body>
-
-    <h1>Invoice Check List</h1>
-
-    <div id="pending">
-        Pending: 5
+    <div id="main">
+      <div class="col">
+        <a class="btn" href="/invoice.html">Invoice</a>
+      </div>
+      <div class="col">
+        <a class="btn" href="/payment.html">Payment</a>
+      </div>
+      <div class="col">
+        <a class="btn" href="/entry.html">Case Entry</a>
+      </div>
+      <div class="col">
+        <a class="btn" href="/edit.html">Edit Lists</a>
+      </div>
     </div>
-
-    <main>
-       <div id="date">
-        <li id="date_li">Date</li> <input type="checkbox" onclick="date(event)" >
-       </div>
-       <div id="month">
-        <li>Month</li> <input type="checkbox" onclick="date(event)">
-       </div>
-       <div id="invoice">
-        <li>Invoice Number</li> <input type="checkbox" onclick="date(event)" >
-       </div>
-       <div id="pay">
-        <li>Pay Out Cycle</li> <input type="checkbox"  onclick="date(event)">
-       </div>
-       <div id="amount">
-        <li>Total Amount</li> <input type="checkbox"  onclick="date(event)">
-       </div>
-    <button id="btn"> <a href="/payment.html">Payment</a></button>
-
-    </main>
-
-
 
     <script src="main.js"></script>
     <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyCblIH1doqfxW7tcWgUe1XkoWtS5VuA-fI",
-          authDomain: "invoice-check-list.firebaseapp.com",
-          projectId: "invoice-check-list",
-          storageBucket: "invoice-check-list.appspot.com",
-          messagingSenderId: "337934867780",
-          appId: "1:337934867780:web:0da1af893ec5fdb0960b11",
-          measurementId: "G-JR55TK2LWV"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-</body>
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCblIH1doqfxW7tcWgUe1XkoWtS5VuA-fI",
+        authDomain: "invoice-check-list.firebaseapp.com",
+        projectId: "invoice-check-list",
+        storageBucket: "invoice-check-list.appspot.com",
+        messagingSenderId: "337934867780",
+        appId: "1:337934867780:web:0da1af893ec5fdb0960b11",
+        measurementId: "G-JR55TK2LWV",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
 </html>
